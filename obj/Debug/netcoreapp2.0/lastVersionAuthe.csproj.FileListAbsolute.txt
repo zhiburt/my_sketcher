@@ -1,0 +1,75 @@
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.deps.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.runtimeconfig.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.runtimeconfig.dev.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.dll
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.AssemblyInfo.cs
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.pdb
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.dll
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.pdb
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe\lastVersionAuthe\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.deps.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.runtimeconfig.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.runtimeconfig.dev.json
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.dll
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.pdb
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.AssemblyInfo.cs
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.dll
+C:\Users\Asus\Documents\Visual Studio 2017\Projects\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.pdb
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.deps.json
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.runtimeconfig.json
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.runtimeconfig.dev.json
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.dll
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\lastVersionAuthe.pdb
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.AssemblyInfo.cs
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.dll
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.pdb
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\en\lastVersionAuthe.resources.dll
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\bin\Debug\netcoreapp2.0\ru\lastVersionAuthe.resources.dll
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Controllers.HomeController.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Controllers.HomeController.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csproj.GenerateResource.Cache
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\en\lastVersionAuthe.resources.dll
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\ru\lastVersionAuthe.resources.dll
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Home.About.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Home.About.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Models.AccountViewModels.RegisterViewModel.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Models.AccountViewModels.RegisterViewModel.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.csprojResolveAssemblyReference.cache
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._SelectLanguagePartial.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._SelectLanguagePartial.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Create.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Create.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Edit.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Edit.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Index.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Index.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Manual.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Manual.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._Footer.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._Footer.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Remove.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.Remove.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Home.Index.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Home.Index.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._Layout.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._Layout.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._LoginPartial.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._LoginPartial.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Account.Login.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Account.Login.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Account.Register.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Account.Register.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._AccountSmall.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.IndexOtherUser.en.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Manual.IndexOtherUser.ru.resources
+C:\Users\Asus\Documents\devfo\lastVersionAuthe - Copy\lastVersionAuthe\obj\Debug\netcoreapp2.0\lastVersionAuthe.Resources.Views.Shared._AccountSmall.ru.resources

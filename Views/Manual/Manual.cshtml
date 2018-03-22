@@ -1,0 +1,135 @@
+﻿@using lastVersionAuthe.Models.ManualViewModels
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = "Manual";
+}
+@model ManualViewModel
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+@section Css{
+    <link rel="stylesheet" href="~/css/Manual.css" />
+    <link rel="stylesheet" href="~/lib/jquery-bar-rating/dist/themes/fontawesome-stars-o.css" />
+    <link rel="stylesheet" href="~/css/readonlyTags.css" />
+}
+
+<div class="bg-light">
+    <div class="blog-header text-center">
+        <div class="container">
+            <h1 class="blog-title">@Model.Title</h1>
+            <small class="creator-blog"><a class="" asp-action="IndexOtherUser" asp-controller="Manual" asp-route-username="@Model.Creator">@Model.Creator</a></small>
+            <p class="lead blog-description">@Model.ShortDescription</p>
+            <div class="star-description">
+                <select id="stars">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="tags-short">
+                @{
+                    if (Model.Tags != null)
+                    {
+                        foreach (var item in Model.Tags)
+                        {
+                            <a href="#" class="badge badge-pill badge-info">@item</a>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <hr />
+    <main role="main" class="container">
+
+        <div class="row">
+
+            <div class="col-lg-9 blog-main">
+
+                <div class="blog-post">
+                    @Html.Raw(Model.Body)
+                </div><!-- /.blog-post -->
+
+
+                <div class="text-center like-body jumbotron">
+                    <a class="btn btn-link" id="like" href="#"><i class="fa fa-thumbs-o-up fa-3x"></i></a>
+                    <a class="btn btn-link" id="dislike" href="#"><i class="fa fa-thumbs-o-down fa-3x"></i></a>
+                </div>
+                
+
+                <nav class="blog-pagination">
+                    <a class="btn btn-outline-primary" href="#">@Localizer["Up"]</a>                  
+                </nav>
+
+            </div><!-- /.blog-main -->
+
+            <aside class="col-lg-3 blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                    <div class="edit-button">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            if (UserManager.GetUserName(User) == Model.Creator)
+                            {
+                                <div class="sidebar-module">
+                                    <h4>@Localizer["EditText"]</h4>
+                                    <ol class="list-unstyled">
+                                        <li><a class="btn btn-secondary btn-sm" asp-action="Edit" asp-controller="Manual" asp-route-title="@Model.Title" asp-route-userCreator="@Model.Creator">@Localizer["EditButton"]</a>
+</li>
+                                    </ol>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+
+                        }
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>@Localizer["UserArchives"]</h4>
+                        <ol class="list-unstyled">
+                            @{
+                                if (Model.OtherManualsUser != null)
+                                {
+                                    foreach (var item in Model.OtherManualsUser)
+                                    {
+                                        if (item != Model.Title)
+                                        {
+                                            <li><a asp-action="Manual" asp-controller="Manual" asp-route-title="@item" asp-route-userCreator="@Model.Creator">@item</a></li>
+                                        }
+                                    }
+                                }
+                            }
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>@Localizer["Elsewhere"]</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </aside><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+    </main>
+</div>
+
+
+@await Html.PartialAsync("_Footer")
+
+
+@section Scripts
+    {
+    <script src="~/lib/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="~/lib/Bootstrap-4-Tag-Input-Plugin-jQuery/tagsinput.js"></script>
+    <script src="~/js/IndexManual.js"></script>
+}

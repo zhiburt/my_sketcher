@@ -1,0 +1,76 @@
+﻿footer {
+    color: white;
+}
+
+    footer a {
+        color: #bfffff;
+    }
+
+        footer a:hover {
+            color: white;
+        }
+
+.footer-bottom {
+    background: #3d6277;
+    padding: 2em;
+}
+
+.footer-top {
+    background: #22313f;
+}
+
+.footer-middle {
+    background: #3d6277;
+    padding-top: 2em;
+    color: white;
+}
+/**Sub Navigation**/
+.subnavigation-container {
+    background: #3d6277;
+}
+
+.subnavigation .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.subnavigation-container {
+    text-align: center;
+}
+
+    .subnavigation-container .navbar {
+        display: inline-block;
+        margin-bottom: -6px; /* Inline-block margin offffset HACK -Gilron */
+    }
+
+.col-subnav a {
+    padding: 1rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.col-subnav .active {
+    border-top: 5px solid orange;
+    background: white;
+    color: black;
+}
+
+
+.mainfooter{
+    padding-top: 2rem;
+}
+
+.footer-title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#tesa {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#item-contact {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "UserList";
+}
+
+@model IEnumerable<ApplicationUser>
+
+<h2>Список пользователей</h2>
+<table class="table">
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="RoleEdit" asp-route-userid="@user.Id">Права доступа</a>
+            </td>
+        </tr>
+    }
+</table>

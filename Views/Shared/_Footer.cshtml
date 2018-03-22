@@ -1,0 +1,128 @@
+﻿@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+
+<footer class="mainfooter" role="contentinfo">
+    </div>
+    <div class="footer-top p-y-2">
+        <div class="container-fluid"  id="tesa">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="footer-title text-center text-secondary">
+                        <h4 class="p-b-1">@Localizer["ContactUs"]</h4>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="list-inline mb-0 text-center">
+                        <li id="item-contact" class="list-inline-item">
+                            <a href="" class="text-danger"><span class="fa fa-twitter fa-3x"></span></a>
+                        </li>
+
+                        <li id="item-contact" class="list-inline-item">
+                            <a href="" class="text-secondary"><span class="fa fa-facebook-square fa-3x"></span></a>
+                        </li>
+
+                        <li id="item-contact" class="list-inline-item">
+                            <a href="" class="text-primary"><span class="fa fa-slack fa-3x"></span></a>
+                        </li>
+
+
+                        <li id="item-contact" class="list-inline-item">
+                            <a href="" class="text-dark"><span class="fa fa-github fa-3x"></span></a>
+                        </li>
+
+                        <li id="item-contact" class="list-inline-item">
+                            <a href="" class="text-info"><span class="fa fa-instagram fa-3x"></span></a>
+                        </li>
+
+                        <li id="item-contact" class="list-inline-item">
+                            <a href="" class="text-warning"><span class="fa  fa-3x fa-envelope-o"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                 </div>
+            </div>
+        </div>
+
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>@Localizer["Address"]</h4>
+                        <address>
+                            <ul class="list-unstyled">
+                                <li>
+                                    @Localizer["CurrectlyAddres"]
+                                </li>
+                                <li>
+                                    @Localizer["Phone"]: +375 (44) 4943978
+                                </li>
+                                <li>
+                                    @await Html.PartialAsync("_SelectLanguagePartial")
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>@Localizer["PopularServices"]</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"></a></li>
+                            <li><a href="#">@Localizer["PaymentCenter"]</a></li>
+                            <li><a href="#">@Localizer["ContactDirectory"]</a></li>
+                            <li><a href="#">@Localizer["Forms"]</a></li>
+                            <li><a href="#">@Localizer["NewsAndUpdates"]</a></li>
+                            <li><a href="#">@Localizer["FAQ"]</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>@Localizer["WebsiteInformation"]</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">@Localizer["WebsiteTutorial"]</a></li>
+                            <li><a href="#">@Localizer["Accessibility"]</a></li>
+                            <li><a href="#">@Localizer["Disclaimer"]</a></li>
+                            <li><a href="#">@Localizer["PrivacyPolicy"]</a></li>
+                            <li><a href="#">@Localizer["FAQs"]</a></li>
+                            <li><a href="#">@Localizer["Webmaster"]</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>@Localizer["PopularDepartments"]</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">@Localizer["ParksAndRecreation"]</a></li>
+                            <li><a href="#">@Localizer["PublicWorks"]</a></li>
+                            <li><a href="#">@Localizer["PoliceDepartment"]</a></li>
+                            <li><a href="#">@Localizer["Fire"]</a></li>
+                            <li><a href="#">@Localizer["MayorAndCityCouncil"]</a></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-left text-secondary">
+                        <!--Footer Bottom-->
+                              @*@await Html.PartialAsync("_SelectLanguagePartial")*@
+                        <p class="">&copy; @Localizer["Copyright"]</p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</footer>

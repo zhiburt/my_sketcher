@@ -1,0 +1,214 @@
+﻿@using lastVersionAuthe.Models
+@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using lastVersionAuthe.Models.SearchViewModels
+@model SearchViewModel
+
+@section Css{
+    <link rel="stylesheet" href="~/css/HomeIndex.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="~/lib/jqcloud2/dist/jqcloud.min.css" />
+}
+
+<!-- page heading -->
+<div class='container container-dark'>
+    <div class='header-content'>
+        <div id="cloud-tags" class="jqcloud"></div>
+    </div>
+</div>
+
+
+<!-- page content + floating button -->
+<div class='container p-y-md'>
+    <div class="content-contener">
+        <div id="top-posts">
+            <div class="card-header">
+                <div class="text-uppercase btn-block text-center align-content-center">
+                    <h3 class="">@Localizer["TopPosts"]</h3>
+                    @{
+                        foreach (var item in ViewBag.MessageList)
+                        {
+                            <h4>@item</h4>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="card-group">
+
+                @{
+                    if (ViewBag.TopManuals != null)
+                    {
+                        foreach (var item in (IQueryable<Manual>)ViewBag.TopManuals)
+                        {
+                            <div class="card">
+                                <a asp-action="Manual" asp-controller="Manual" asp-route-title="@item.Title" asp-route-userCreator="@item.UserCreator">
+                                    <img class="card-img-top" src="~/images/4 (2).jpg" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <h4 class="card-title">@item.Title</h4>
+                                    <p class="card-text">@item.ShortDescription</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="tags-short col-md-12 text-left">
+                                            @{
+                                                if (item.Tags != null)
+                                                {
+                                                    IEnumerable<string> tagsList = item.Tags.Split(',');
+
+                                                    foreach (var ite in tagsList)
+                                                    {
+                                                        <a href="#" class="badge badge-pill badge-info">@ite</a>
+                                                    }
+                                                }
+                                            }
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="card-text text-left"><small class="text-muted">@Localizer["ThemesTop"] - @item.Themes</small></p>
+                                        </div>
+                                        <div class="col-md-12 text-left">
+                                            <p class="card-text"><small class="text-muted">@Localizer["Rating"] - @item.Rating</small></p>
+                                        </div>
+                                        <div class="col-md-12 text-left">
+                                            <p class="card-text"><small class="text-muted">@Localizer["Creator"] - <a class="" asp-action="IndexOtherUser" asp-controller="Manual" asp-route-username="@item.UserCreator"> @item.UserCreator </a></small></p>
+                                        </div>
+                                        <div class="col-md-12 text-left">
+                                            <p class="card-text"><small class="text-muted">@Localizer["Time"] - @item.CreatedDate</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <p>@Localizer["Sorry"]</p>
+
+                                                }
+                }
+            </div>
+        </div>
+        <div id="last-posts">
+            <div class="modal-header">
+                <div class="text-uppercase btn-block text-center align-content-center">
+                    <h3 class="">@Localizer["LastPosts"]</h3>
+                    @{
+                        foreach (var item in (Type[])ViewBag.Types)
+                        {
+                            <h5>@item.Name + / + @item.FullName</h5>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="card-group">
+
+                @{
+                    if (ViewBag.LastManuals != null)
+                    {
+                        foreach (var item in (IQueryable<Manual>)ViewBag.LastManuals)
+                        {
+                            <div class="card">
+                                <a asp-action="Manual" asp-controller="Manual" asp-route-title="@item.Title" asp-route-userCreator="@item.UserCreator">
+                                    <img class="card-img-top" src="~/images/4 (2).jpg" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <h4 class="card-title">@item.Title</h4>
+                                    <p class="card-text">@item.ShortDescription</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="tags-short col-md-12 text-left">
+                                            @{
+                                                if (item.Tags != null)
+                                                {
+                                                    IEnumerable<string> tagsList = item.Tags.Split(',');
+
+                                                    foreach (var ite in tagsList)
+                                                    {
+                                                        <a href="#" class="badge badge-pill badge-info">@ite</a>
+                                                    }
+                                                }
+                                            }
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="card-text text-left"><small class="text-muted">@Localizer["ThemesTop"] - @item.Themes</small></p>
+                                        </div>
+                                        <div class="col-md-12 text-left">
+                                            <p class="card-text"><small class="text-muted">@Localizer["Rating"] - @item.Rating</small></p>
+                                        </div>
+                                        <div class="col-md-12 text-left">
+                                            <p class="card-text"><small class="text-muted">@Localizer["Creator"] - <a class="" asp-action="IndexOtherUser" asp-controller="Manual" asp-route-username="@item.UserCreator">@item.UserCreator</a></small></p>
+                                        </div>
+                                        <div class="col-md-12 text-left">
+                                            <p class="card-text"><small class="text-muted">@Localizer["Time"] - @item.CreatedDate</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <p>@Localizer["Sorry"]</p>
+
+                                                }
+                }
+            </div>
+        </div>
+    </div>
+    <div class='control'>
+        <div class='btn-material'></div>
+        <i class='material-icons icon-material-search'>search</i>
+    </div>
+</div>
+
+<!-- full screen form controls -->
+<i class='icon-close material-icons'>close</i>
+
+<div class='search-input'>
+    <form asp-action="Index" asp-controller="Search" method="post">
+        <input class='input-search' asp-for="SearchString" placeholder='Start Typing' type='text'>
+        <button type="submit" href="" class="btn btn-link"><i class="fa fa-send"></i></button>
+    </form>
+</div>
+
+@await Html.PartialAsync("_Footer")
+
+@section Scripts
+    {
+    <script>
+        $('.control').click(function () {
+            $('body').addClass('search-active');
+            $('.input-search').focus();
+        });
+
+        $('.icon-close').click(function () {
+            $('body').removeClass('search-active');
+        });
+
+    </script>
+    <script src="~/lib/jqcloud2/dist/jqcloud.min.js"></script>
+    <script>
+        var words = [
+            { text: ".NET", weight: 13, link: '/Search/Search/?searchTag=.NET' },
+            { text: ".NET CORE", weight: 17.5, link: '/Search/Search/?searchTag=.NET%CORE' },
+            { text: "Angular", weight: 9.4, link: '/Search/Search/?searchTag=Angular' },
+            { text: "Vue.js", weight: 4.5, link: '/Search/Search/?searchTag=Vue.js' },
+            { text: "CSS3", weight: 6, link: '/Search/Search/?searchTag=CSS3' },
+            { text: "Java", weight: 12.5, link: '/Search/Search/?searchTag=Java' },
+            { text: "Kotlin", weight: 10.5, link: '/Search/Search/?searchTag=Kotlin' },
+            { text: "PHP", weight: 27.5, link: '/Search/Search/?searchTag=PHP' },
+            { text: "Python", weight: 15.5, link: '/Search/Search/?searchTag=Python' }
+        ];
+
+        $('#cloud-tags').jQCloud(words, {
+            autoResize: true,
+
+        });
+    </script>
+}

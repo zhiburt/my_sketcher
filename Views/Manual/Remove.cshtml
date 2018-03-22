@@ -1,0 +1,58 @@
+﻿@using lastVersionAuthe.Models.ManualViewModels
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = "Remove";
+}
+@model DeleteViewModel
+
+<div class="jumbotron">
+<h1 class="display-3">@Localizer["RemoveRage"]</h1>
+<p class="lead text-right">@Localizer["RemoveText"]</p>
+<hr class="my-4" />
+<div class="lead">
+    <form asp-controller="Manual" asp-action="Remove" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="submit">Remove a </button>
+                </span>
+                <input type="text" class="form-control" asp-for="Title" placeholder="Manual Title for..." aria-label="Manual Title for...">
+            </div>
+            <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+    </form>
+</div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-dark">
+            <thead class="thead">
+                <tr>
+                    <th>@Localizer["Title"]</th>
+                    <th>@Localizer["Tags"]</th>
+                    <th>@Localizer["Rating"]</th>
+                    <th>@Localizer["AmountLikes"]</th>
+                    <th>@Localizer["ShortDeskription"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewBag.Manuals != null)
+                {
+                    foreach (var item in ViewBag.Manuals)
+                    {
+                        <tr>
+                            <td>@item.Title</td>
+                            <td>@item.Tags</td>
+                            <td>@item.Rating</td>
+                            <td>@item.AmountLike</td>
+                            <td>@item.ShortDescription</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

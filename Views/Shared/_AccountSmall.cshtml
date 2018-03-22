@@ -1,0 +1,14 @@
+﻿@inject IViewLocalizer Localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@section Css{ 
+    <link href="~/css/AccountSmall.css" rel="stylesheet" />
+}
+
+
+<div class="card">
+    <img class="card-img-top img-fluid" src="~/images/User/Icone-de-cliente.jpg" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">@Localizer["SomeData"]</p>
+    </div>
+</div>

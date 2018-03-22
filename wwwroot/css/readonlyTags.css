@@ -1,0 +1,14 @@
+﻿.bootstrap-tagsinput input {
+    visibility: hidden !important;
+}
+
+.bootstrap-tagsinput {
+    background-color: rgba(245, 245, 245, 0.00);
+    border: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+    .bootstrap-tagsinput > span > span {
+        display: none !important;
+    }

@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewData["Title"] = "IndexOtherUser";
+}
+
+@using lastVersionAuthe.Models.ManualViewModels
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@model IQueryable<Manual>
+@inject UserManager<ApplicationUser> UserManager
+
+
+@section Css{
+    <link href="~/css/IndexManual.css" rel="stylesheet" />
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+            <ul class="nav nav-pills flex-column">
+                <div class="small-logo">
+                    @await Html.PartialAsync("_AccountSmall")
+                </div>
+            </ul>
+
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">@Localizer["Overview"]<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">@Localizer["Reports"]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">@Localizer["Analytics"]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">@Localizer["Export"]</a>
+                </li>
+            </ul>
+
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">@Localizer["Other"]</a>
+                </li>
+            </ul>
+        </nav>
+
+        @{
+            double averageRating = @Model.Sum(n => n.Rating) / Model.Count();
+        }
+
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3 test">
+            <div class="UserInfo">
+                <div class="jumbotron">
+                    <h2>@Localizer["UserInfo"]</h2>
+                    <hr />
+                    @{
+                        
+                            @if (Model != null)
+                            {
+
+                            <h3>@Localizer["AmountPosts"] - @Model.Count()</h3>
+                            <h3>@Localizer["AmountLikes"] - @Model.Sum(n=> Double.Parse(n.AmountLike ?? "0"))</h3>
+                            <h3>@Localizer["AverageRating"] - @averageRating</h3>
+                        }
+                    } 
+                </div>
+            </div>
+            <h2>@Localizer["Manuals"]</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th><a asp-action="IndexOtherUser" asp-route-username="@ViewBag.UserName" asp-route-sortState="@ViewBag.TitleSort">@Localizer["Title"]</a></th>
+                            <th>@Localizer["Tags"]</th>
+                            <th><a asp-action="IndexOtherUser" asp-route-username="@ViewBag.UserName" asp-route-sortState="@ViewBag.RatingSort">@Localizer["Rating"]</a></th>
+                            <th><a asp-action="IndexOtherUser" asp-route-username="@ViewBag.UserName" asp-route-sortState="@ViewBag.LikeSort">@Localizer["AmountLikes"]</a></th>
+                            <th>@Localizer["ShortDescription"]</th>
+                            <th>@Localizer["Settings"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Title</td>
+                                    <td>@item.Tags</td>
+                                    <td>@item.Rating</td>
+                                    <td>@item.AmountLike</td>
+                                    <td>@item.ShortDescription</td>
+                                    <td>
+                                        <div class="container board-settings">
+                                            <div class="btn-group btn-group-sm float-right" role="group" aria-label="Basic example">
+                                                <a class="btn btn-secondary" asp-action="Statistics" asp-controller="Manual" asp-route-title="@item.Title" asp-route-userCreator="@item.UserCreator">@Localizer["Statistics"]</a>
+                                                <a class="btn btn-secondary" asp-action="Manual" asp-controller="Manual" asp-route-title="@item.Title" asp-route-userCreator="@item.UserCreator">@Localizer["View"]</a>
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/lib/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="~/lib/chart.js/dist/Chart.min.js"></script>
+    <script src="~/js/Manual.js"></script>
+
+}

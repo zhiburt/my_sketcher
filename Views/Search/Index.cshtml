@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@using lastVersionAuthe.Models.SearchViewModels
+
+@model SearchViewModel
+<div class="search-line">
+    <form asp-controller="Search" asp-action="Index" method="post">
+        <div class="form-group">
+            <label for="Title">Search</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" id="Title" placeholder="Title" asp-for="SearchString">
+            </div>
+            <small id="titleHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <span asp-validation-for="SearchString" class="text-danger"></span>
+        </div>
+        <div class="form-control">
+          
+
+        </div>
+    </form>
+</div>
+
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Creator</th>
+                <th scope="col">Themes</th>
+                <th scope="col">Tags</th>
+                <th scope="col">Rating</th>
+                <th scope="col">DateTime</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                @if (ViewBag.Manuals != null)
+                {
+                    foreach (var item in (IQueryable<Manual>)ViewBag.Manuals)
+                    {
+
+                        <tr>
+                            <th scope="row"><a class="page-link" asp-action="Manual" asp-controller="Manual" asp-route-title="@item.Title" asp-route-userCreator="@item.UserCreator">@item.Title</a></th>
+                            <td>@item.UserCreator</td>
+                            <td>@item.Themes</td>
+                            <td>@item.Tags</td>
+                            <td>@item.Rating</td>
+                            <td>@item.CreatedDate</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                }
+            }
+
+
+        </tbody>
+    </table>
+
+
+</div>
